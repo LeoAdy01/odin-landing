@@ -1,1 +1,1 @@
-# odin-landing
+Some lessons have passed since the last project, let's hope that this one is better than the last one:)
