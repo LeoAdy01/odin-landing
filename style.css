@@ -1,0 +1,156 @@
+:root{
+    --background:#000000;
+    --textcolor:#00a8ff;
+    --navbartext:#c9d1d9;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--background);
+    font-family: "Anonymous Pro", sans-serif;
+    color: var(--navbartext);
+    overflow-x: hidden;
+}
+
+#nav-bar{
+    background-color: #0d1117;
+    width: 1920px;
+    height: 95px;
+    position: relative;
+    top: -100px;
+    left: -8px;
+    box-shadow: 0px 0px 10px white;
+}
+
+#header-img{
+    position: relative;
+    z-index: 1;
+    top: -5px;
+    left: 38px;
+}
+
+li{
+    color: var(--navbartext);
+    list-style-type: none;
+    display: inline-block;
+    padding: 15px;
+    font-size: 1.4rem;
+    position: relative;
+    left: -30px;
+    top: 10px;
+    margin-bottom: 0;
+}
+
+#about, #pricing{
+    border-right: 1px solid rgba(210,215,211, 0.2);
+}
+
+.right{
+    float: right;
+}
+
+a{
+    text-decoration: none;
+    color: var(--navbartext);
+}
+
+.motto{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: var(--textcolor);
+    position: relative;
+    top: 85px;
+    font-size: 25px;
+    animation: text 2s 1;
+}
+
+@keyframes text{
+    0%{
+        color: var(--background);
+    }
+
+    30%{
+        color: var(--background);
+        letter-spacing: 10px;
+    }
+
+    100%{
+        color:var(--textcolor);
+    }
+}
+
+.description{
+    letter-spacing: 3px;
+    color: var(--navbartext);
+    position: relative;
+    top: 125px;
+    font-size: 20px;
+    animation: text2 4.5s 1;
+}
+
+@keyframes text2{
+    0%{
+        color: var(--background);
+    }
+
+    30%{
+        color:var(--background);
+    }
+
+    100%{
+        color: var(--navbartext);
+    }
+}
+
+.main-1{
+    transform: translateX(13%);
+    width: 80%;
+}
+
+.fa-solid{
+    color: #3f79e0;
+    position: relative;
+    top: 75px;
+    animation: icon 2s 1;
+}
+
+#icon-about{
+    color: var(--navbartext);
+    animation: icon-about 2s 1;
+    letter-spacing: 3px;
+    font-size: 20px;
+    font-family: "Anonymous Pro", sans-serif;
+}
+
+@keyframes icon{
+    0%{
+        color: var(--background);
+    }
+
+    30%{
+        color: var(--background);
+    }
+
+    100%{
+        color: #3f79e0;
+    }
+}
+
+@keyframes icon-about{
+    0%{
+        color: var(--background);
+    }
+
+    30%{
+        color: var(--background);
+        letter-spacing: 10px;
+    }
+
+    100%{
+        color: var(--navbartext);
+    }
+}
