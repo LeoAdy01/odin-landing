@@ -6,7 +6,6 @@
 
 *{
     box-sizing: border-box;
-    max-width: 100%;
 }
 
 body{
@@ -17,18 +16,16 @@ body{
 }
 
 #nav-bar{
-    width: 1920px;
     height: 95px;
     position: relative;
     top: -100px;
     left: -8px;
+    max-width: 100%;
 }
 
 #header-img{
-    position: relative;
+    transform: translate(0%, 0%);
     z-index: 1;
-    top: -5px;
-    left: 38px;
     animation: logo 4s 1;
 }
 
@@ -88,6 +85,7 @@ a{
     top: 125px;
     font-size: 20px;
     animation: text2 4.5s 1;
+    width: 1110px;
 }
 
 @keyframes text2{
@@ -105,8 +103,9 @@ a{
 }
 
 .main-1{
-    transform: translateX(13%);
+    transform: translateX(26%);
     width: 80%;
+    max-width: 100%;
 }
 
 .fa-solid{
@@ -199,7 +198,7 @@ a{
     }
 }
 
-a:after{
+.nav-link:after{
     content: "";
     position: absolute;
     background-color: var(--textcolor);
@@ -210,12 +209,12 @@ a:after{
     transition: 0.3s;
 }
 
-a:hover{
+.nav-link:hover{
     color: var(--textcolor);
     transition: 0.3s;
 }
 
-a:hover:after{
+.nav-link:hover:after{
     width: 100%;
 }
 
@@ -237,4 +236,87 @@ a:hover:after{
         color: var(--textcolor);
     }
     
+}
+
+.description2{
+    letter-spacing: 3px;
+    color: var(--navbartext);
+    transform: translate(0%, 600%);
+    font-size: 20px;
+    animation: text2 5.5s 1;
+}
+
+#know-more{
+    text-transform: uppercase;
+    padding: 15px;
+    position: relative;
+    top: 180px;
+    background:linear-gradient(to right,#212529,var(--background) 80%);
+    animation: know 6.5s 1;
+}
+
+#know-more:hover{
+    color: var(--textcolor);
+    transition: 0.3s;
+}
+
+@keyframes know {
+    0%{
+        background:none;
+        color: var(--background);
+    }
+
+    30%{
+        background:none;
+        color: var(--background);
+    }
+     
+    45%{
+        background:linear-gradient(
+            to right,
+            #212529,
+            var(--background) 80%
+        ) ;
+    }
+
+    100%{
+
+    }
+}
+
+.main-2{
+   background-color: #0c0f16;
+   transform: translate(-1%, 75%);
+   display: flex;
+   justify-content: space-evenly;
+   height: 630px;
+   margin: auto;
+   width: 1920px;
+}
+
+.box1{
+    background-color: #1f2533;
+    height: 450px;
+    width: 400px;
+    transform: translateY(20%);
+    text-align: center;
+    border-radius: 5%;
+}
+
+.box2{
+    background-color: #1f2533;
+    height: 450px;
+    width: 400px;
+    text-align: center;
+    border-radius: 5%;
+    transform: translateY(20%);
+}
+
+.box3{
+    background-color: #1f2533;
+    height: 450px;
+    width: 400px;
+    text-align: center;
+    border-radius: 5%;
+    transform: translateY(20%);
 }
