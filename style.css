@@ -457,6 +457,7 @@ a{
  @media screen and (max-width: 450px){
     html, body{
         overflow-y: scroll;
+        max-width: 100%;
     }
 
     #header-img{
@@ -561,10 +562,11 @@ a{
  @media screen and (max-width: 380px) {
     html, body{
         overflow-y: scroll;
+        max-width: 100%;
     }
 
     #header-img{
-        transform: translateX(12%);
+        transform: translateX(0%);
     }
 
     .main-1{
