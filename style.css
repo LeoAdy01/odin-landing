@@ -454,14 +454,14 @@ a{
  }
 
 
- @media screen and (max-width: 450px){
+ @media screen and (max-width: 450px) and (min-width:431px){
     html, body{
         overflow-y: scroll;
         max-width: 100%;
     }
 
     #header-img{
-        transform: translateX(12%);
+        transform: translateX(9%);
     }
 
     .main-1{
@@ -498,7 +498,7 @@ a{
 
     .box1, .box2, .box3{
         margin-bottom: 100px;
-        transform: translateY(10%);
+        transform: translate(-2%, 10%);
         width: 330px;
     }
 
@@ -541,7 +541,7 @@ a{
     }
 
     #nav-bar{
-        transform: translate(2%, 115%);
+        transform: translate(3%, 115%);
         border-top: 1px solid rgba(79, 82, 85, 0.4);
         border-bottom: 1px solid rgba(79, 82, 85, 0.4);
         width: 450px;
@@ -558,15 +558,345 @@ a{
 
  }
 
-
- @media screen and (max-width: 380px) {
+ @media screen and (max-width: 430px) and (min-width: 391px){
     html, body{
         overflow-y: scroll;
         max-width: 100%;
     }
 
     #header-img{
-        transform: translateX(0%);
+        transform: translateX(9%);
+    }
+
+    .main-1{
+        width: 320px;
+        transform: translateX(10%);
+    }
+
+    .motto{
+        animation: motto-media 3s 1;
+    }
+
+    .description{
+        width: 320px;
+    }
+
+    .description2{
+        width: 320px;
+        transform: translateY(150%);
+    }
+
+    #know-more{
+        position: relative;
+        top: 210px;
+    }
+
+    .main-2{
+        display: flex;
+        flex-direction: column;
+        width: 428px;
+        transform: translate(-2%, 30%);
+        height: 1890px;
+        align-items: center;
+    }
+
+    .box1, .box2, .box3{
+        margin-bottom: 100px;
+        transform: translate(0%, 10%);
+        width: 330px;
+    }
+
+    .title{
+        transform: translateX(11%);
+        width: 270px;
+    }
+
+    .price-list{
+        transform: translateX(11%);
+        width: 270px;
+    }
+
+    .select1, .select2, .select3{
+        position: absolute;
+        left: 37%;
+        top: 75%;
+    }
+
+
+    .main-3{
+        transform: translateY(150%);
+        width: 428px;
+    }
+
+    .quotes{
+        transform: translate(4%, -90%);
+    }
+
+    .author{
+        position: relative;
+        top: -90px;
+        left: -200px;
+    }
+
+    .footer{
+        width: 428px;
+        transform: translate(-2%, 890%);
+        height: 70px;
+    }
+
+    #nav-bar{
+        transform: translate(3%, 115%);
+        border-top: 1px solid rgba(79, 82, 85, 0.4);
+        border-bottom: 1px solid rgba(79, 82, 85, 0.4);
+        width: 450px;
+    }
+
+    .right{
+        transform: translate(3%, -15%);
+        padding-top: 0px;
+    }
+
+    #about, #pricing{
+        border-right: 1px solid rgba(79, 82, 85, 0.4);
+    }
+
+ }
+
+ @media screen and (max-width: 375px) and (min-width: 361px){
+    html, body{
+        overflow-y: scroll;
+        max-width: 100%;
+    }
+
+    #header-img{
+        transform: translateX(2%)!important;
+    }
+
+    .main-1{
+        width: 320px;
+        transform: translateX(10%);
+    }
+
+    .motto{
+        animation: motto-media 3s 1;
+    }
+
+    .description{
+        width: 320px;
+    }
+
+    .description2{
+        width: 320px;
+        transform: translateY(150%);
+    }
+
+    #know-more{
+        position: relative;
+        top: 210px;
+    }
+
+    .main-2{
+        display: flex;
+        flex-direction: column;
+        width: 428px;
+        transform: translate(-2%, 30%);
+        height: 1890px;
+        align-items: center;
+    }
+
+    .box1, .box2, .box3{
+        margin-bottom: 100px;
+        transform: translate(-8%, 10%)!important;
+        width: 330px!important;
+    }
+
+    .title{
+        transform: translateX(11%);
+        width: 270px;
+    }
+
+    .price-list{
+        transform: translateX(11%);
+        width: 270px;
+    }
+
+    .select1, .select2, .select3{
+        position: absolute;
+        left: 37%;
+        top: 75%;
+    }
+
+
+    .main-3{
+        transform: translateY(150%);
+        width: 375px!important;
+    }
+
+    .quotes{
+        transform: translate(4%, -90%);
+    }
+
+    .author{
+        position: relative;
+        top: -90px;
+        left: -200px;
+    }
+
+    .footer{
+        width: 375px!important;
+        transform: translate(-2%, 890%);
+        height: 70px;
+    }
+
+    #nav-bar{
+        transform: translate(3%, 115%);
+        border-top: 1px solid rgba(79, 82, 85, 0.4);
+        border-bottom: 1px solid rgba(79, 82, 85, 0.4);
+        width: 450px;
+    }
+
+    .right{
+        transform: translate(3%, -15%);
+        padding-top: 0px;
+    }
+
+    #about, #pricing{
+        border-right: 1px solid rgba(79, 82, 85, 0.4);
+        font-size: 20px;
+    }
+
+    #contact{
+        font-size: 20px;
+    }
+
+    #about, #pricing, #contact{
+        transform:translateX(10%)!important;
+    }
+
+ }
+ 
+ @media screen and (max-width: 360px){
+    html, body{
+        overflow-y: scroll;
+        max-width: 100%;
+    }
+
+    #header-img{
+        transform: translateX(2%)!important;
+    }
+
+    .main-1{
+        width: 320px;
+        transform: translateX(10%);
+    }
+
+    .motto{
+        animation: motto-media 3s 1;
+    }
+
+    .description{
+        width: 320px;
+    }
+
+    .description2{
+        width: 320px;
+        transform: translateY(150%);
+    }
+
+    #know-more{
+        position: relative;
+        top: 210px;
+    }
+
+    .main-2{
+        display: flex;
+        flex-direction: column;
+        width: 428px;
+        transform: translate(-2%, 30%);
+        height: 1890px;
+        align-items: center;
+    }
+
+    .box1, .box2, .box3{
+        margin-bottom: 100px;
+        transform: translate(-10%, 10%)!important;
+        width: 300px!important;
+    }
+
+    .title{
+        transform: translateX(5.5%)!important;
+        width: 270px;
+    }
+
+    .price-list{
+        transform: translateX(5.5%)!important;
+        width: 270px;
+    }
+
+    .select1, .select2, .select3{
+        position: absolute;
+        left: 37%;
+        top: 75%;
+    }
+
+
+    .main-3{
+        transform: translateY(150%);
+        width: 375px!important;
+    }
+
+    .quotes{
+        transform: translate(-2%, -90%)!important;
+        width: 340px!important;
+    }
+
+    .author{
+        position: relative;
+        top: -90px;
+        left: -200px;
+    }
+
+    .footer{
+        width: 375px!important;
+        transform: translate(-2%, 890%);
+        height: 70px;
+    }
+
+    #nav-bar{
+        transform: translate(3%, 115%);
+        border-top: 1px solid rgba(79, 82, 85, 0.4);
+        border-bottom: 1px solid rgba(79, 82, 85, 0.4);
+        width: 450px;
+    }
+
+    .right{
+        transform: translate(3%, -15%);
+        padding-top: 0px;
+    }
+
+    #about, #pricing{
+        border-right: 1px solid rgba(79, 82, 85, 0.4);
+        font-size: 20px;
+    }
+
+    #contact{
+        font-size: 20px;
+    }
+
+    #about, #pricing, #contact{
+        transform:translateX(10%)!important;
+    }
+
+ }
+ 
+ @media screen and (max-width: 390px) and (min-width:383px){
+    html, body{
+        overflow-y: scroll;
+        max-width: 100%;
+    }
+
+    #header-img{
+        transform: translateX(4%)!important;
     }
 
     .main-1{
@@ -595,7 +925,7 @@ a{
     .main-2{
         display: flex;
         flex-direction: column;
-        max-width: auto!important;
+        width: 400px!important;
         transform: translate(-2%, 20%);
         height: 1890px;
         align-items: center;
@@ -603,18 +933,18 @@ a{
 
     .box1, .box2, .box3{
         margin-bottom: 100px;
-        transform: translate(-11%, 10%);
-        width: 300px;
+        transform: translate(-2%, 10%)!important;
+        width: 300px!important;
         text-align: center;
     }
 
     .title{
-        transform: translateX(10%);
+        transform: translateX(10%)!important;
         width: 250px;
     }
 
     .price-list{
-        transform: translateX(10%);
+        transform: translateX(10%)!important;
         width: 250px;
     }
 
@@ -630,13 +960,13 @@ a{
     }
 
     .quotes{
-        transform: translate(4%, -90%);
+        transform: translate(4%, -150%);
     }
 
     .author{
         position: relative;
-        top: -130px;
-        left: -200px;
+        top: -190px;
+        left: -140px;
     }
 
     .footer{
@@ -659,15 +989,18 @@ a{
 
     #about, #pricing{
         border-right: 1px solid rgba(79, 82, 85, 0.4);
-        font-size: 17px;
+        font-size: 20px;
     }
 
     #contact{
-        font-size: 17px;
+        font-size: 20px;
+    }
+
+    #about, #pricing, #contact{
+        transform: translateX(0%);
     }
 
  }
-
 
  @keyframes motto-media{
     0%{
